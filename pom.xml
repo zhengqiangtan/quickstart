@@ -37,19 +37,19 @@ under the License.
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>apache.snapshots</id>
-			<name>Apache Development Snapshot Repository</name>
-			<url>https://repository.apache.org/content/repositories/snapshots/</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
+<!--	<repositories>-->
+<!--		<repository>-->
+<!--			<id>apache.snapshots</id>-->
+<!--			<name>Apache Development Snapshot Repository</name>-->
+<!--			<url>https://repository.apache.org/content/repositories/snapshots/</url>-->
+<!--			<releases>-->
+<!--				<enabled>false</enabled>-->
+<!--			</releases>-->
+<!--			<snapshots>-->
+<!--				<enabled>true</enabled>-->
+<!--			</snapshots>-->
+<!--		</repository>-->
+<!--	</repositories>-->
 
 	<dependencies>
         <dependency>
@@ -78,11 +78,11 @@ under the License.
             <artifactId>flink-jdbc_2.11</artifactId>
             <version>1.10.0</version>
         </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.46</version>
-        </dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.15</version>
+		</dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-table-planner_2.11</artifactId>
@@ -112,7 +112,7 @@ under the License.
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.71</version>
+			<version>1.2.72</version>
 		</dependency>
         <dependency>
             <groupId>org.hbase</groupId>
@@ -157,7 +157,7 @@ under the License.
             <version>1.11.0</version>
         </dependency>
 
-        //habse 依赖
+        <!--habse 依赖-->
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-client</artifactId>
